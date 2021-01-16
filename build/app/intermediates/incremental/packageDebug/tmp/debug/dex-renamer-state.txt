@@ -1,4 +1,0 @@
-#Tue Jan 12 12:31:51 WIB 2021
-base.0=/home/gpp/filterin-mobile/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

@@ -1,5 +1,6 @@
 import 'package:filterin/helper/setor-controller.dart';
 import 'package:flutter/material.dart';
+import 'package:filterin/components/cameras.dart';
 
 class RiwayatSetor extends StatefulWidget {
   @override
@@ -29,6 +30,7 @@ class _RiwayatSetorState extends State<RiwayatSetor> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Riwayat Setor"),
+        backgroundColor:Colors.green,
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -50,6 +52,15 @@ class _RiwayatSetorState extends State<RiwayatSetor> {
                   Text('tgl : ' + data[i]['tanggal']),
                   Text('jenis sampah : ' + data[i]['jenis_sampah']),
                   Text('berat : ' + data[i]['berat'].toString()),
+                  RaisedButton(
+                    child: Text("Tambah Bukti Pembayaran"),
+                    onPressed: () {
+                      Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => TakePictureScreen()),
+            );
+                    }
+                  )
                 ],
               ),
             );

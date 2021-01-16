@@ -98,7 +98,7 @@ Widget _buildSaldo() {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [const Color(0xffE0EDC5), const Color(0xffE0EDC5)],
+            color: [const Color(0xffE0EDC5), const Color(0xffE0EDC5)],
           ),
           borderRadius: new BorderRadius.all(new Radius.circular(3.0))),
       child: new Column(
@@ -109,7 +109,7 @@ Widget _buildSaldo() {
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [const Color(0xff84c263), const Color(0xff84c263)],
+                  color: [const Color(0xff84c263), const Color(0xff84c263)],
                 ),
                 borderRadius: new BorderRadius.only(
                     topLeft: new Radius.circular(3.0),
